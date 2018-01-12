@@ -1,0 +1,139 @@
+html, body {
+  height: 100%;
+  font-family: 'Work Sans', sans-serif;
+  margin: 0;
+  overflow: hidden;
+}
+
+main {
+	overflow-x: hidden;
+}
+
+.bcg {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+}
+
+#slide-1 .bcg {background-image:url("background.jpg")}
+
+#slide-2 .bcg {background: none; background-color: #010101; text-align: center}
+
+h1 {
+  font-size: 72px;
+  color: black;
+}
+
+.btn {
+  height: 48px;
+  margin-top: 20px;
+  background-color: transparent;
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  font-family: Arial;
+  color: black;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  border: solid black 2px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #f5f5f5;
+  text-decoration: none;
+}
+
+.hsContainer {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.hsContent {
+	max-width: 450px;
+	margin: 0 auto 0 auto;
+	display: table-cell;
+	color: #ebebeb;
+	padding: 0 0;
+	position: relative;
+	z-index: 10;
+}
+
+.hsContent h2,
+.copy h2 {
+	color: #ffffff;
+	font-size: 45px;
+	line-height: 48px;
+	margin-bottom: 12px;
+}
+
+.hsContent p {
+	margin: 10 0;
+}
+
+.hsContent a {
+	color: #b2b2b2;
+	text-decoration: underline;
+}
+
+.bgBlack {
+	background-color: rgba(0,0,0,0.75);
+	padding: 3px 10px;
+}
+
+/* Navigation */
+#slideNav {
+	display: none;
+	position: fixed;
+	right: 0;
+	top: 50%;
+	margin-top: -80px;
+	z-index: 11;
+}
+#slideNav ul {
+	list-style: none;
+	color: #000000;
+	font-size: 13px;
+	text-align: center;
+}
+#slideNav li {
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	background-color: rgba(255,255,255,0.70);
+	margin-bottom: 1px;
+}
+.no-rgba  #slideNav li {background-color: #ffffff}
+#slideNav a {
+	display: block;
+	width: 50px;
+	height: 50px;
+	position: relative;
+	overflow: hidden;
+	text-decoration: none;
+	color: #000000;
+}
+#slideNav a.disabled {
+	cursor: default;
+}
+
+#name {
+  margin-left: 50px;
+  padding-top: 50px;
+  margin-bottom: 0px;
+}
+
+#taglines {
+  color: black;
+  font-weight: bold;
+  margin-left: 50px;
+  margin-right: 50px;
+  display: inline-block;
+}
