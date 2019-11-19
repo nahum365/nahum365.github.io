@@ -1,0 +1,15 @@
+body {
+  font: 300 12px "Helvetica Neue";
+  height: 640px;
+  margin: 80px 160px 80px 160px;
+  overflow: hidden;
+  position: relative;
+  width: 960px;
+}
+
+
+body > svg {
+  position: absolute;
+  top: 100px;
+  left: -160px;
+}
